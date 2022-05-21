@@ -1,56 +1,83 @@
 import React from 'react';
-
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useForm } from 'react-hook-form';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import { useForm } from "react-hook-form";
-import { signInWithEmailAndPassword } from 'firebase/auth';
-
-import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../Shared/Loading';
 
-const Login = () => {
+const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
+
     const navigate = useNavigate()
-    let location = useLocation();
-    let from = location.state?.from?.pathname || "/";
     const [
-        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
-
-
-      if(loading || gLoading){
+      ] = useCreateUserWithEmailAndPassword(auth);
+      const [updateProfile, updating, uError] = useUpdateProfile(auth);
+      if(loading || gLoading||updating){
           return <Loading></Loading>
       }
-    if(user|| gUser){
-        console.log(user||gUser)
-        navigate(from, { replace: true });
+    if(user){
+        console.log(user)
     }
 
-    const onSubmit = data => {
+    
+
+    const onSubmit =async data => {
         console.log(data);
-        signInWithEmailAndPassword(data.email, data.password)
-        // navigate("/appointment");
+      await createUserWithEmailAndPassword(data.email, data.password)
+        navigate("/");
+        await updateProfile({ displayName:data.name });
     }
 
     let signInError;
 
-    if(error || gError){
+    if(error || gError||uError){
         signInError = <p>{error?.message||gError?.message}</p>
     }
-
-
     return (
-        <div className='flex h-screen justify-center items-center'>
+        <div>
+                    <div className='flex h-screen justify-center items-center'>
             <div class="card w-96 bg-base-100 shadow-xl">
                 <div class="card-body">
-                    <h2 class="text-center">Login</h2>
+                    <h2 class="text-center">SignUp</h2>
 
 
                     <form onSubmit={handleSubmit(onSubmit)}>
+
+                        <div class="form-control w-full max-w-xs">
+                            <label class="label">
+                                <span class="label-text">Name</span>
+                               
+                            </label>
+
+                            <input 
+                            type="text"
+                            placeholder="you Name" 
+                            class="input input-bordered w-full max-w-xs" 
+                            {...register("name",{
+                                required:{
+                                    value:true,
+                                    message:"name is Required"
+                                },
+                                
+                            } )}
+                            />
+                            <label class="label">
+                            {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
+                            
+                                
+                            </label>
+                        </div>
+
+
+
+
+
+
 
                         <div class="form-control w-full max-w-xs">
                             <label class="label">
@@ -80,6 +107,13 @@ const Login = () => {
                                 
                             </label>
                         </div>
+
+
+
+
+
+
+                        
 
 
 
@@ -119,7 +153,7 @@ const Login = () => {
                     <input className='btn w-full max-w-xs' type="submit" value="Login" />
                     </form>
 
-                    <p>Motor Parts  <Link to="/signup"><span className='text-primary'>create a account</span></Link></p>
+                    <p>Motor Parts <Link to="/login"><span className='text-primary'>Login</span></Link></p>
 
                     <div class="divider">OR</div>
 
@@ -134,7 +168,8 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        </div>
     );
 };
 
-export default Login;
+export default SignUp;

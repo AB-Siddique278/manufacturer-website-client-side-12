@@ -1,0 +1,61 @@
+[
+    {
+      "_id": 1,
+      "name": "Nat baltu",
+      "price":100,
+      "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
+      "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      " minimum_order_quantity":500,
+      "available quantity":1000
+
+      
+    },
+    {
+      "_id": 2,
+      "name": "Nut",
+      "price":200,
+      "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
+      "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      " minimum_order_quantity":500,
+      "available quantity":1000
+
+
+    },
+    {
+      "_id": 3,
+      "name": "Teeth Cleaning",
+      "price":250,
+      "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
+      "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      " minimum_order_quantity":500,
+      "available quantity":1000
+
+    },
+    {
+      "_id": 4,
+      "name": "Cavity Protection",
+      "price":350,
+      "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
+      "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      " minimum_order_quantity":500,
+      "available quantity":1000
+    },
+    {
+      "_id": 5,
+      "name": "Pediatric Dental",
+      "price":350,
+      "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
+      "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      " minimum_order_quantity":500,
+      "available quantity":1000
+    },
+    {
+      "_id": 6,
+      "name": "Oral Surgery",
+      "price":400,
+      "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
+      "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      " minimum_order_quantity":500,
+      "available quantity":1000
+    }
+  ]
