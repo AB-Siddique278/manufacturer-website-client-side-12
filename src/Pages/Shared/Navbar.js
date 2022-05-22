@@ -13,7 +13,10 @@ const Navbar = () => {
   
     <li><Link to="/">Home</Link></li>
     <li><Link to="/myPortfolio">Portfoliot</Link></li>
-    <li><Link to="/dashboard">Dashboard</Link></li>
+   
+    {
+        user && <li><Link to="/dashboard">Dashboard</Link></li>
+    }
     <li>{user ? <button  class="btn btn-secondary" onClick={logout}>Signout </button> : <Link to="/login">Login</Link>}</li>
     
     

@@ -5,8 +5,8 @@
       "price":100,
       "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
       "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      " minimum_order_quantity":500,
-      "available quantity":1000
+      "minimum_order_quantity":500,
+      "available_quantity":1000
 
       
     },
@@ -16,8 +16,8 @@
       "price":200,
       "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
       "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      " minimum_order_quantity":500,
-      "available quantity":1000
+      "minimum_order_quantity":500,
+      "available_quantity":1000
 
 
     },
@@ -27,8 +27,8 @@
       "price":250,
       "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
       "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      " minimum_order_quantity":500,
-      "available quantity":1000
+      "minimum_order_quantity":500,
+      "available_quantity":1000
 
     },
     {
@@ -37,8 +37,8 @@
       "price":350,
       "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
       "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      " minimum_order_quantity":500,
-      "available quantity":1000
+      "minimum_order_quantity":500,
+      "available_quantity":1000
     },
     {
       "_id": 5,
@@ -46,8 +46,8 @@
       "price":350,
       "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
       "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      " minimum_order_quantity":500,
-      "available quantity":1000
+      "minimum_order_quantity":500,
+      "available_quantity":1000
     },
     {
       "_id": 6,
@@ -55,7 +55,7 @@
       "price":400,
       "image":"https://ae01.alicdn.com/kf/H46aa8c05a388407da59b9f99bdf35461s.jpg",
       "description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      " minimum_order_quantity":500,
-      "available quantity":1000
+      "minimum_order_quantity":500,
+      "available_quantity":1000
     }
   ]
