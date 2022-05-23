@@ -13,7 +13,7 @@ const Tools = () => {
 
     return (
         <div>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-5'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10'>
             {
                 services.map(service=><ServicesCard
                 key={service._id}
