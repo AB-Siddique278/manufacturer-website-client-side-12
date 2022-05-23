@@ -25,6 +25,7 @@ const Purchase = () => {
 
             service:service._id,
             serviceName:service.name,
+            price:service.price,
             customer_email:user.email,
             customerName:user.displayName,
             purchase_quantity:event.target.purchase_quantity.value
