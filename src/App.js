@@ -17,6 +17,8 @@ import AddReview from './Pages/Dashboard/AddReview';
 import Users from './Pages/Dashboard/Users';
 import Payment from './Pages/Dashboard/Payment';
 import AddService from './Pages/Dashboard/AddService';
+import ManageServices from './Pages/Dashboard/ManageServices';
+import UpdateProfile from './Pages/Dashboard/UpdateProfile';
 
 function App() {
   return (
@@ -42,7 +44,9 @@ function App() {
           <Route path='review' element={<AddReview></AddReview>}></Route>
           <Route path='addservice' element={<AddService></AddService>}></Route>
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
+          <Route path='updateProfile/:serviceId' element={<UpdateProfile></UpdateProfile>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
+          <Route path='manageServices' element={<ManageServices></ManageServices>}></Route>
           
         </Route>
 

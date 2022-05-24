@@ -30,7 +30,8 @@ const AddService = () => {
     };
     return (
         <div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <h1 className='text-2xl font-mono font-bold text-center mb-3 text-secondary'>Add New Service </h1>
+            <div class="card w-96 bg-base-100 shadow-xl mx-auto">
                 <div class="card-body">
                     <form className='mx-auto' onSubmit={handleSubmit(onSubmit)}>
 
