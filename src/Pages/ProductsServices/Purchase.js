@@ -3,10 +3,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { toast } from 'react-toastify';
+
 const Purchase = () => {
     const [user, loading, error] = useAuthState(auth);
     const { serviceId } = useParams();
     const [service, setService] = useState({});
+
     useEffect(() => {
 
         const url = `http://localhost:8000/service/${serviceId}`
@@ -55,27 +57,35 @@ const Purchase = () => {
 
     return (
         <div className=''>
-            
+
             <h1 className='text-2xl font-bold text-center'>Registration for purchase</h1>
 
-            
 
-            <div className='flex space-2'>
 
-                <div class="card bg-base-100 shadow-xl mx-auto">
+            <div className=''>
+
+
+             
+
+                <div class="card  w-96 bg-base-100 shadow-xl mx-auto py-10">
+                    <figure><img src={service.image} alt="Shoes" /></figure>
                     <div class="card-body">
-                        <img className='w-96' src={service.image} alt="" />
-                        <h2 class="card-title">name:{service.name}</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        
+                        <p className=' font-bold  '>Price:{service.price}</p>
+
+                        <p className=' font-bold  '>Minimum Order Quantity:{service.minimum_order_quantity}</p>
+                        <p className=' font-bold  '>Available Quantity:{service.available_quantity}</p>
+                        <p >Price:{service.description}</p>
                     </div>
                 </div>
 
-                <div class="divider lg:divider-horizontal">OR</div> 
+
+
+
+
 
                 <div class="card w-96 bg-base-100 shadow-xl my-5 mx-auto">
                     <div class="card-body">
-                        <h2 class="card-title">name:{service.name}</h2>
+                        <h2 class="card-title"> Product Name:{service.name}</h2>
                         <form action='' onSubmit={handleBooking} className='grid grid-cols-1 gap-3   mt-2'>
                             <label htmlFor="user_name"> User Name</label>
                             <input type="text" name='name' disabled value={user?.displayName} class="input input-bordered w-full max-w-xs" />

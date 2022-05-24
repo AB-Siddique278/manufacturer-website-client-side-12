@@ -19,6 +19,11 @@ import Payment from './Pages/Dashboard/Payment';
 import AddService from './Pages/Dashboard/AddService';
 import ManageServices from './Pages/Dashboard/ManageServices';
 import UpdateProfile from './Pages/Dashboard/UpdateProfile';
+import NotFound from './Pages/NotFound/NotFound';
+import MyProfile from './Pages/Dashboard/MyProfile';
+import UseProfile from './Pages/Dashboard/UseProfile';
+import Blog from './Pages/Blog/Blog';
+
 
 function App() {
   return (
@@ -32,6 +37,9 @@ function App() {
             <Purchase />
           </RequireAuth>
         } />
+        
+      
+
         <Route path="/dashboard" element={
         
         <RequireAuth>
@@ -44,12 +52,17 @@ function App() {
           <Route path='review' element={<AddReview></AddReview>}></Route>
           <Route path='addservice' element={<AddService></AddService>}></Route>
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
-          <Route path='updateProfile/:serviceId' element={<UpdateProfile></UpdateProfile>}></Route>
+          <Route path='profile' element={<MyProfile></MyProfile>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
+
+          
+        
           <Route path='manageServices' element={<ManageServices></ManageServices>}></Route>
           
+          
         </Route>
-
+        <Route path='blog' element={<Blog></Blog>}></Route>
+        <Route path="*" element={<NotFound />} />
 
 
 
