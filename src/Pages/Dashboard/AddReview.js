@@ -14,7 +14,7 @@ const AddReview = () => {
 
         const review = { name, comment, rating, email };
 
-        fetch('http://localhost:8000/review', {
+        fetch('https://murmuring-harbor-27586.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

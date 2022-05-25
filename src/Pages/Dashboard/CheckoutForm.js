@@ -15,7 +15,7 @@ const CheckoutForm = ({service}) => {
 
     const {price, _id, customerName, customer_email} = service;
     useEffect(()=>{
-     fetch('http://localhost:8000/create-payment-intent',{
+     fetch('https://murmuring-harbor-27586.herokuapp.com/create-payment-intent',{
          method: 'POST',
          headers: {
             'content-type':'application/json',
@@ -86,7 +86,7 @@ const CheckoutForm = ({service}) => {
                  transactionId:paymentIntent.id
              }
              
-              fetch(`http://localhost:8000/booking/${_id}`,{
+              fetch(`https://murmuring-harbor-27586.herokuapp.com/booking/${_id}`,{
                 method: 'PATCH',
                 headers: {
                    'content-type':'application/json',

@@ -8,7 +8,7 @@
 //     const {id}=useParams();
 //     const [profile, setProfile] = useState({});
 //     useEffect(()=>{
-//         const url = `http://localhost:8000/profile/${id}`;
+//         const url = `https://murmuring-harbor-27586.herokuapp.com/profile/${id}`;
 //         fetch(url)
 //         .then(res => res.json())
 //         .then(data => setProfile(data));
@@ -24,7 +24,7 @@
 
 //         const updateprofile = { name, address, mobile, email };
 
-//         fetch(`http://localhost:8000/profile/${id}`, {
+//         fetch(`https://murmuring-harbor-27586.herokuapp.com/profile/${id}`, {
 //             method: 'PUT',
 //             headers: {
 //                 'content-type': 'application/json',

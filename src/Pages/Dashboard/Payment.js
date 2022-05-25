@@ -15,7 +15,7 @@ const stripePromise = loadStripe('pk_test_51L0uQPCqZDBjK7glvjcNaR7rzPr2diXJk5MtL
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:8000/booking/${id}`;
+    const url = `https://murmuring-harbor-27586.herokuapp.com/booking/${id}`;
 
     const { data: service, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',
@@ -66,4 +66,4 @@ const Payment = () => {
 
 export default Payment;
 
-//http://localhost:8000/booking/${id}
+//https://murmuring-harbor-27586.herokuapp.com/booking/${id}

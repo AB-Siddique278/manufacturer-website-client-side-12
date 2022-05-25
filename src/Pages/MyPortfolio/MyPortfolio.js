@@ -24,11 +24,17 @@ const MyPortfolio = () => {
 
 
                         <div className=' max-w-3xl'>
-                            <h1 class="text-5xl font-bold">HELLO' THIS IS <br />ABU BAKAR SIDDIQUE <br /><span className=' text-3xl'>Expert in Development</span> </h1>
+                            <h1 class="text-5xl font-bold">HELLO' THIS IS <br />ABU BAKAR SIDDIQUE <br /><span className=' text-3xl'>Expert in web Development</span> </h1>
                             <p class="py-6 text-xl font-mono ">I am Full stack Web developer. I am expert in HTML, CSS, JAVA-Script, Flutter,c, c++, Python PHP with WordPress. <b/> Now I am working in the Fiverr marketplace, And My hobby is photography.</p>
                             <p className='text-xl font-mono '>I am studying in Computer Science and Engineering Department at Daffodil International University. </p>
                             <br />
                             <p className='text-xl font-mono '>My permanent address is Barisal Bhola Charfashion. And present address Dhaka Dhanmondi 32.</p>
+                            
+                            <br />
+                            <br />
+                            <p className='text-xl font-mono '>Email: absiddique1060@gmail.com</p>
+                            <p className='text-xl font-mono '>Phone: 01789848646</p>
+
                              
                               
                               <br />

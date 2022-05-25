@@ -11,7 +11,7 @@ const AddService = () => {
 
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:8000/service`;
+        const url = `https://murmuring-harbor-27586.herokuapp.com/service`;
         fetch(url, {
             method: 'POST',
             headers: {

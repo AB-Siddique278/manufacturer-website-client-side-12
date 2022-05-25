@@ -17,7 +17,7 @@ const MyProfile = () => {
 
         const profile = { name, address, mobile, email };
 
-        fetch('http://localhost:8000/profile', {
+        fetch('https://murmuring-harbor-27586.herokuapp.com/profile', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -35,7 +35,7 @@ const MyProfile = () => {
     }
     return (
         <div>
-            
+            <h1 className=' uppercase text-2xl font-bold font-mono text-center text-[#37cdbe]'> update your profile </h1>
             <div class="card w-96 bg-base-100 shadow-xl mx-auto">
                 <div class="card-body">
                     

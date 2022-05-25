@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:8000/booking?customer_email=${user.email}`,{
+            fetch(`https://murmuring-harbor-27586.herokuapp.com/booking?customer_email=${user.email}`,{
 
             method:'GET',
             headers:{
@@ -59,6 +59,7 @@ const MyOrders = () => {
                             <td>
                                 {(o.price && !o.paid) && <Link to={`/dashboard/payment/${o._id}`}><button class="btn btn-success btn-xs">pay</button></Link>}
                                 {(o.price && o.paid) && <span className='text-success'>paid</span>}
+                              
                             </td>
                         </tr>)
                        }

@@ -11,7 +11,7 @@ const Purchase = () => {
 
     useEffect(() => {
 
-        const url = `http://localhost:8000/service/${serviceId}`
+        const url = `https://murmuring-harbor-27586.herokuapp.com/service/${serviceId}`
         fetch(url)
             .then(response => response.json())
             .then(data => setService(data))
@@ -37,7 +37,7 @@ const Purchase = () => {
 
         }
 
-        fetch('http://localhost:8000/booking', {
+        fetch('https://murmuring-harbor-27586.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
