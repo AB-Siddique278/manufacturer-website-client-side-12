@@ -23,6 +23,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import UseProfile from './Pages/Dashboard/UseProfile';
 import Blog from './Pages/Blog/Blog';
+import Tools from './Pages/Home/Tools';
+import AllTools from './Pages/ProductsServices/AllTools';
 
 
 function App() {
@@ -62,6 +64,12 @@ function App() {
           
         </Route>
         <Route path='blog' element={<Blog></Blog>}></Route>
+        <Route path='alltools' element={ <AllTools></AllTools> }></Route>
+        
+        
+       
+        
+       
         <Route path="*" element={<NotFound />} />
 
 
