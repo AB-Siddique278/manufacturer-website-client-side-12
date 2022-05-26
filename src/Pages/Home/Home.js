@@ -23,7 +23,7 @@ const Home = () => {
             <Wholesaler></Wholesaler>
             <Contact></Contact>
             
-            <Footer></Footer>
+           
         </div>
     );
 };

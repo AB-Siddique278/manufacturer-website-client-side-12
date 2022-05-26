@@ -4,7 +4,7 @@ const MyPortfolio = () => {
     return (
         <div>
             <div>
-                <div class="hero  lg:h-[80vh] ">
+                <div class="hero">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                      
 
@@ -34,6 +34,7 @@ const MyPortfolio = () => {
                             <br />
                             <p className='text-xl font-mono '>Email: absiddique1060@gmail.com</p>
                             <p className='text-xl font-mono '>Phone: 01789848646</p>
+                            <p className='text-xl font-mono text-orange-500 '><a href="https://www.linkedin.com/in/abu-bakar-siddique-b2ab561ba" target="_blank">Linkedin Profile</a></p>
 
                              
                               

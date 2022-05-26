@@ -25,6 +25,7 @@ import UseProfile from './Pages/Dashboard/UseProfile';
 import Blog from './Pages/Blog/Blog';
 import Tools from './Pages/Home/Tools';
 import AllTools from './Pages/ProductsServices/AllTools';
+import Footer from './Pages/Home/Footer';
 
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
       </Routes>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );
