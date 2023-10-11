@@ -1,7 +1,5 @@
 # Wellcome to our Motor-Parts
 
-This is our Live Websites [Click For live sites](https://motor-parts-703d0.web.app).
-
 ## Our live website All Building component 
 
 ### Clint Sites source code .
